@@ -1,6 +1,5 @@
 use bitreader::BitReader;
 use hex::FromHex;
-use itertools::Itertools;
 use std::fs::File;
 use std::io::{self, BufRead};
 
