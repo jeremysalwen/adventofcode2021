@@ -1,7 +1,5 @@
-use itertools::iproduct;
 use itertools::EitherOrBoth;
 use itertools::Itertools;
-use num::iter::Range;
 use regex::Regex;
 use std::fs::File;
 use std::io::{self, BufRead};
@@ -15,7 +13,7 @@ struct Op {
 
 fn load_ops() -> Vec<Op> {
     let file = File::open("22.txt").unwrap();
-    let mut lines: io::Lines<io::BufReader<File>> = io::BufReader::new(file).lines();
+    let lines: io::Lines<io::BufReader<File>> = io::BufReader::new(file).lines();
 
     let re = Regex::new(r"(on|off) x=(.*)\.\.(.*),y=(.*)\.\.(.*),z=(.*)\.\.(.*)").unwrap();
     return lines
@@ -63,8 +61,8 @@ fn part1() {
 fn cell_width(coords: &EitherOrBoth<&i64, &i64>) -> i64 {
     match coords {
         EitherOrBoth::Both(x, next) => *next - *x,
-        EitherOrBoth::Left(x) => 1,
-        EitherOrBoth::Right(next) => {
+        EitherOrBoth::Left(_) => 1,
+        EitherOrBoth::Right(_) => {
             panic!()
         }
     }

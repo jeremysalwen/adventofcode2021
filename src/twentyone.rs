@@ -111,7 +111,7 @@ fn part2() {
 
     let mut totalp1_wins = 0;
     let mut totalp2_wins = 0;
-    for i in 0..21 {
+    for _ in 0..21 {
         let (new_worlds, p1wins, p2wins) = step_world(&worlds);
         worlds = new_worlds;
         totalp1_wins += p1wins;
