@@ -1,6 +1,5 @@
 use array2d;
 use array2d::Array2D;
-use itertools::iproduct;
 use itertools::Itertools;
 use std::fs::File;
 use std::io::{self, BufRead};

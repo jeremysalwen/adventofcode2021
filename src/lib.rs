@@ -1,7 +1,7 @@
 #![feature(int_log)]
 #![feature(slice_pattern)]
 #![feature(array_zip)]
-#![feature(let_chains)]
+#![feature(int_abs_diff)]
 mod eight;
 mod eighteen;
 mod eleven;
