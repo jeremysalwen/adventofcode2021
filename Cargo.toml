@@ -13,8 +13,8 @@ array2d="0.2"
 num = "0.1"
 lazy_static = "1"
 bimap = "0.6"
-z3 = {version="0.11.2"}
-z3d = "0.1"
+#z3 = {version="0.11.2"}
+#z3d = "0.1"
 multimap = "0.8"
 counter = "0.5"
 hex = "0.3"

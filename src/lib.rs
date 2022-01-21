@@ -2,7 +2,7 @@
 #![feature(slice_pattern)]
 #![feature(array_zip)]
 #![feature(int_abs_diff)]
-mod eight;
+// mod eight;
 mod eighteen;
 mod eleven;
 mod fifteen;
@@ -26,3 +26,4 @@ mod twentythree;
 mod twentytwo;
 mod two;
 mod twentyfour;
+mod twentyfive;
